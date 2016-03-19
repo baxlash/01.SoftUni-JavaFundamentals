@@ -2,13 +2,29 @@ import java.util.Scanner;
 
 public class TriangleArea {
 	public static void main(String[] args) {
-		System.out.print("Enter the length of a side: ");
 		Scanner scan = new Scanner(System.in);
-		int length = scan.nextInt();
-		System.out.print("Enter the height to the same side: ");
-		int height = scan.nextInt();
-		scan.close();
-		
-		System.out.printf("The are of the triangle with sidelength %s and sideheight %s is %s", length, height, (length*height)/2);
-	}
+        Tuple<Integer, Integer> A = new Tuple(scan.nextInt(), scan.nextInt());
+        Tuple<Integer, Integer> B = new Tuple(scan.nextInt(), scan.nextInt());
+        Tuple<Integer, Integer> C = new Tuple(scan.nextInt(), scan.nextInt());
+        scan.close();
+
+        double result = triangleArea(A, B, C);
+
+        System.out.printf("result = %.0f", result);
+    }
+
+    static double triangleArea(Tuple<Integer, Integer> A, Tuple<Integer, Integer> B, Tuple<Integer, Integer> C) {
+        double area = Math.abs((A.x * (B.y - C.y) + B.x * (C.y - A.y) + C.x * (A.y - B.y)) / 2);
+        return area;
+    }
+}
+
+class Tuple<X, Y> {
+    public final X x;
+    public final Y y;
+
+    public Tuple(X x, Y y) {
+        this.x = x;
+        this.y = y;
+    }
 }
