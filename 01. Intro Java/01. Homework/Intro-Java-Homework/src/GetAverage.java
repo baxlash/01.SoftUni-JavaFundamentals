@@ -1,9 +1,11 @@
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Locale;
 import java.util.Scanner;
 
 public class GetAverage {
 	public static void main(String[] args) {
+		Locale.setDefault(Locale.ROOT);
 		Scanner scan = new Scanner(System.in);
 		String str = scan.nextLine();
 		String[] splitted = str.split(" ");
