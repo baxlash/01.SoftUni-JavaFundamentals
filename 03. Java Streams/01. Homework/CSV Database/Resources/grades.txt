@@ -1,0 +1,7 @@
+1,Geography 5.53,Math 5.38 4.89,
+2,Geography 5.0,Chemistry 3.7,Math 3.15 5.18,
+3,Literature 2.14,Math 3.67,
+4,Literature 6.0,Math 4.44,
+6,Literature 4.44,
+8,Literature 5.4,
+

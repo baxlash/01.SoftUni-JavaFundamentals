@@ -1,0 +1,9 @@
+1,Georgi,Mamarchev,19,Sofia
+2,Petar,Petrov,23,Montana
+3,Ivan,Ivanov,22,Plevem
+4,Iliyan,Stoev,18,Shumen
+6,Anton,Dimov,24,Slivan
+7,Evgeni,Ivanov,22,Samokov
+8,Maria,Petrova,26,Sofia
+9,Kremena,Koleva,19,Petrich
+
